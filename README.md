@@ -1,3 +1,22 @@
+########################
+
+Candidate: Lucas Raatz
+Date of submission: 04/1_/2017
+
+*info dump about project here*
+
+Instructions for running project:
+	1. Do the thing
+	2. Tap banana
+	3. Excellent
+	...
+	
+Thank you for giving me the opportunity to show my skills, and I hope to hear from you soon!
+
+########################
+
+
+
 # Technical Interview Homework: GitHub Dashboard
 
 
