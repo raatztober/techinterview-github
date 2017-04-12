@@ -1,0 +1,32 @@
+.header {
+	text-align:center;
+	height:auto;
+	padding-top:15px;
+	padding-bottom:15px;
+	background-color:#000087;
+	color:#eeeeff;
+	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	font-family:Tahoma, Geneva, sans-serif;
+	font-variant:small-caps;
+}
+
+.button {
+	float:right;
+	text-align:center;
+	height:auto;
+	padding:4px 16px;
+	border: 7px solid #000087;
+	border-radius:10px;
+	background-color:#222266;
+	color:white;
+	transition-duration:0.2s;
+	font-size:24px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-variant:small-caps;
+	font-weight:bold;
+}
+
+.button:hover {
+	background-color:#7777ff;
+}
+
