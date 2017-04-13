@@ -1,8 +1,10 @@
+/* Page header style stuff */
 .header {
 	text-align:center;
 	height:auto;
 	padding-top:15px;
 	padding-bottom:15px;
+	border-radius:6px;
 	background-color:#000087;
 	color:#eeeeff;
 	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -10,6 +12,7 @@
 	font-variant:small-caps;
 }
 
+/* Imbedded refresh button */
 .button {
 	float:right;
 	text-align:center;
@@ -26,7 +29,14 @@
 	font-weight:bold;
 }
 
+/* Fancy schmancy button effect for fun */
 .button:hover {
 	background-color:#7777ff;
 }
 
+/* I preferred light grey for page background over pure white */
+.body {
+	background-color:#d2d2d2;
+}
+
+/*  */
