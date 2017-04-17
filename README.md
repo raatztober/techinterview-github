@@ -2,17 +2,16 @@
 
 Candidate: Lucas Raatz
 
-Date of submission: 04/1_/2017
-
-*info dump about project here*
+Date of submission: 04/16/2017
 
 ##Instructions for running project:
-1. Do the thing
-2. Tap banana
-3. Excellent
-	...
-	
-Thank you for giving me the opportunity to show my skills, and I hope to hear from you soon!
+1. Pull the project onto your computer.
+2. Run index.html in your browser. The page should show up and .css/JQuery files should be pulled properly from the directory.
+
+-My dashboard is designed to re-align itself depending on the size of your browser window (with exception of the actual JSON data).
+-As you will see, I was able to use JQuery/Ajax to successfully pull the JSON data; however, I was unable to get the actual values show in the time that I had. The categories line up exactly with the JSON upon inspection, but instead of showing the actual value, it merely displays the category of the value (i.e. "user: jxbubba" will show "object Object" rather than "jxbubba").
+
+Thank you for giving me this opportunity, and I hope to hear from you soon!
 
 ########################
 

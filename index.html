@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 	<!--Linking the .css and JQuery files to the .html file-->
 		<link rel="stylesheet" href="styles.css" type="text/css">
 		<script src="jquery-3.2.1.min.js" type="text/javascript"> </script>
 	</head>
-
 	<body class="body">
 		<div class="header">
 			<h1>GitHub Events Dashboard</h1>
 		</div>
 		<div id="sa">
 			<a href="#" id="ghrefresh" class="button button">load/refresh</a>
-			<table id="ghuserdata" class="buffer">
+			<!-- Setting up the table for JSON data to be placed -->
+			<table id="ghuserdata" border="2px">
 			<thead>
 				<th>Event ID</th>
 				<th>Event Type</th>
@@ -27,30 +26,26 @@
 			<tbody></tbody>
 			</table>
 			<script type="text/javascript">
-$(function(){
-	
-	$("#ghrefresh").on("click", function(e) {
-	
-	$.getJSON("https://api.github.com/events", function(data) {
-		var tbl_body = "";
-		var odd_even = false;
-		$.each(data, function() {
-			var tbl_row = "";
-			$.each(this, function(j, k) {
-				tbl_row += "<td>" + k + "</td>";
-			})
-			tbl_body += "<tr class=\"" + (odd_even ? "odd" : "even") + "\">" + tbl_row + "</tr>";
-			odd_even = !odd_even;
-		})
-		$("#ghuserdata tbody").html(tbl_body);
-	});
-	
-	});
-	
-});
+				$(function(){
+					<!-- Pull fresh JSON data when button is clicked -->
+					$("#ghrefresh").on("click", function(e) {
+						$.getJSON("https://api.github.com/events", function(data) {
+							<!-- Prepping rows/columns for data -->
+							var tbl_body = "";
+							var odd_even = false;
+							$.each(data, function() {
+								var tbl_row = "";
+								$.each(this, function(j, k) {
+									tbl_row += "<td>" + k + "</td>";
+								})
+								tbl_body += "<tr class=\"" + (odd_even ? "odd" : "even") + "\">" + tbl_row + "</tr>";
+								odd_even = !odd_even;
+							})
+							$("#ghuserdata tbody").html(tbl_body);
+						});
+					});
+				});
 			</script>
-
 		</div>
 	</body>
-
 </html>
