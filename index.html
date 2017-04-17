@@ -12,14 +12,25 @@
 			<h1>GitHub Events Dashboard</h1>
 		</div>
 		<div id="sa">
-			<a href="" id="ghrefresh" class="button button">refresh events</a>
+			<a href="#" id="ghrefresh" class="button button">load/refresh</a>
 			<table id="ghuserdata" class="buffer">
-			<tbody>
-			
-			</tbody>
+			<thead>
+				<th>Event ID</th>
+				<th>Event Type</th>
+				<th>User</th>
+				<th>Repo</th>
+				<th>Payload</th>
+				<th>Public?</th>
+				<th>Date/Time</th>
+				<th>Organization</th>
+			</thead>
+			<tbody></tbody>
 			</table>
 			<script type="text/javascript">
 $(function(){
+	
+	$("#ghrefresh").on("click", function(e) {
+	
 	$.getJSON("https://api.github.com/events", function(data) {
 		var tbl_body = "";
 		var odd_even = false;
@@ -33,6 +44,9 @@ $(function(){
 		})
 		$("#ghuserdata tbody").html(tbl_body);
 	});
+	
+	});
+	
 });
 			</script>
 
